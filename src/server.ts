@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/login", (req, res) => {
-    res.json(JSON.stringify({ok: 1})).end();
+    res.send("LO HICE!!");
 });
 
 app.listen(process.env.PORT || 5000, () => {
