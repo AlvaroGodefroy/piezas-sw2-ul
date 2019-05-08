@@ -7,7 +7,7 @@
     "watch": "concurrently \"npm run ts:watch\" \"npm run serve\"",
     "build": "npm run ts:build",
     "prod:serve": "node dist/server.js",
-    "prestart": "ts-node tools/copyAssets",
+    "prestart": "ts-node tools/copyAssets.ts",
     "start": "npm run build && npm run prod:serve",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
@@ -19,6 +19,7 @@
     "express": "^4.15.3",
     "pg": "^7.10.0",
     "typescript": "^2.4.2",
+    "ts-node": "^8.1.0",
     "winston": "^2.3.1"
   },
   "devDependencies": {
